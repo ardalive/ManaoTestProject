@@ -1,0 +1,16 @@
+<form class="register" action="register" method="POST">
+    <h1>Register</h1>
+    <input type="hidden" name="form" value="register">
+    <input type="text" name="login" class="form-control" placeholder="Login">
+    <div class="login-error"></div>
+    <input type="password" name="password" class="form-control" placeholder="Password">
+    <input type="password" name="confirm" class="form-control confirm-password" placeholder="Confirm password">
+    <div class="password-error"></div>
+    <input type="email" name="email" class="form-control" placeholder="Email">
+    <div class="email-error"></div>
+    <input type="text" name="name" class="form-control" placeholder="Name">
+    <div class="name-error"></div>
+
+    <input type="button" name="submit" value="Register" onclick="submitForm(this)">
+    <div class="success"></div>
+</form>

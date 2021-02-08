@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <salt>
+    $1$cre1ns7g$
+  </salt>
+  <user id="1">
+    <login>admin</login>
+    <password>$1$cre1ns7g$MxAdow3dAl6bnWzluKZc./</password>
+    <email>admin@admin.com</email>
+    <name>admin</name>
+    <token/>
+    <sid/>
+  </user>
+</Data>

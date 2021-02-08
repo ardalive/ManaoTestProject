@@ -1,0 +1,73 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e4f3ff;
+    font-family: sans-serif;
+}
+.container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-columns: auto 450px 450px auto;
+}
+form{
+    grid-area: 2;
+    width: 384px;
+    margin: 0 auto;
+}
+.register{
+    grid-column: 2;
+}
+.login{
+    grid-column: 3;
+}
+.logout{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+input{
+    display: block;
+    box-sizing: border-box;
+    margin: 5px auto;
+    width: 100%;
+    height: 34px;
+    font-size: medium;
+    border: 1px solid #c5c5c5;
+    padding-left: 10px;
+    color: #4b6154;
+}
+input:focus{
+    outline: 1px solid #b9b9b9;
+}
+button{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    height: 40px;
+    font-size: medium;
+    background-color: #e1ffe0;
+    border: 1px solid #c5c5c5;
+    color: #4b6154;
+}
+button:focus{
+    outline: 1px solid #b9b9b9;
+}
+button:hover{
+    cursor: pointer;
+}
+.confirm-password{
+    margin-top: -6px;
+}
+hr{
+    border: none;
+    height: 1px;
+    width: 80%;
+    background-color: #bcd1e0;
+    display: block;
+}
+form div{
+    font-size: small;
+    padding-left: 11px;
+}
