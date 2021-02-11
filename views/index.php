@@ -1,6 +1,6 @@
 <?php
 use app\XmlManager;
-include 'class\XmlManager.php';
+include 'class/XmlManager.php';
 
 include 'header.html';
 

@@ -1,7 +1,6 @@
 <?php
-//session_start();
 use app\XmlManager;
-include 'class\XmlManager.php';
+include 'class/XmlManager.php';
 
 if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
 

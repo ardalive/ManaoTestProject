@@ -17,7 +17,6 @@ function submitForm(e){
         url: $form.attr('action'),
         data: $form.serialize()
     }).done(function(msg) {
-        console.log(msg);
         let response = JSON.parse(msg);
         if(response.success !== true){
             $login.append(response.login);

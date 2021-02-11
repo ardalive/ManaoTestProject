@@ -85,19 +85,13 @@ class XmlManager
 
     public function insertToken($user){
         $token = $this->generateToken($user);
-        if($user->getElementsByTagName('token')->count() > 0){
-            $this->removeToken($user);
-        }
-        $this->appendNodeValue($user, 'token', $token);
+        $user->getElementsByTagName('token')->item(0)->nodeValue = $token;
         $this->applyChanges();
         return $token;
     }
 
     public function insertSessionId($user, $sid){
-        if($user->getElementsByTagName('sid')->count() > 0){
-            $this->removeSessionId($user);
-        }
-        $this->appendNodeValue($user, 'sid', $sid);
+        $user->getElementsByTagName('sid')->item(0)->nodeValue = $sid;
         $this->applyChanges();
     }
 
@@ -110,14 +104,12 @@ class XmlManager
     }
 
     public function removeToken($user){
-        $user->removeChild($user->getElementsByTagName('token')->item(0));
-        $this->appendNodeValue($user, 'token' ,'');
+        $user->getElementsByTagName('token')->item(0)->nodeValue = '';
         $this->applyChanges();
     }
 
     public function removeSessionId($user){
-        $user->removeChild($user->getElementsByTagName('sid')->item(0));
-        $this->appendNodeValue($user, 'sid' ,'');
+        $user->getElementsByTagName('sid')->item(0)->nodeValue = '';
         $this->applyChanges();
     }
 

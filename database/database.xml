@@ -11,4 +11,20 @@
     <token/>
     <sid/>
   </user>
+  <user id="2">
+    <login>vouvoi</login>
+    <password>$1$cre1ns7g$MxAdow3dAl6bnWzluKZc./</password>
+    <email>vou@admin.com</email>
+    <name>admin</name>
+    <token></token>
+    <sid></sid>
+  </user>
+  <user id="3">
+    <login>naizardq</login>
+    <password>$1$cre1ns7g$MxAdow3dAl6bnWzluKZc./</password>
+    <email>qweqwe@qwe.sdf</email>
+    <name>name</name>
+    <token/>
+    <sid/>
+  </user>
 </Data>
